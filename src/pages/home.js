@@ -38,7 +38,7 @@ function Home() {
         summ: values.summ,
         email: values.email
       }
-      await axios.post("http://localhost:6969/register", data, {
+      await axios.post("https://clash-website-backend.herokuapp.com/register", data, {
         headers: {
           'Content-Type': 'application/json'
         }
