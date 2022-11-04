@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "stoneCollege";
+  src: url("../public/stoneCollege.ttf");
+}
+
+
+@font-face {
+  font-family: "FrizQuadrataBold";
+  src: url("../public/FrizQuadrataBold.otf");
+}
+
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../public/Lato-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../public/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Njnaruto";
+  src: url("../public/njnaruto.ttf");
+}
+
+
+body {
+  margin: 0;
+  font-family:  FrizQuadrataBold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
