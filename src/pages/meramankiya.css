@@ -1,7 +1,7 @@
 .sexy {
-  background-image: url(E:\VsCode\Webdev\clash2.0\src\img\scroll.png);
+  background-image: url(../img/scroll.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   word-wrap: normal;
 }
 

@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import Image from "../img/bg.png";
 import ScrollImage from "../img/scroll.png";
 import "./meramankiya.css";
-
+import axios from "axios"
 
 
 function Home() {
@@ -29,9 +29,24 @@ function Home() {
       .required("Summoner name is required"),
     }),
 
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       console.log("form submitted");
-      console.log(values);
+      try{
+      const data = {
+        name: values.name,
+        phoneNumber: values.phone,
+        summ: values.summ,
+        email: values.email
+      }
+      await axios.post("http://localhost:6969/register", data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      alert("Registered Successfully");
+    }catch(e){
+      alert("An Error Occured");
+    }
     },
   });
 
